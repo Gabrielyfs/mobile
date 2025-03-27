@@ -11,10 +11,17 @@ datasource db {
 }
 
 model Produto {
-  id Int @id @default(autoincrement())
-  name String
-  price Float
+  id          Int    @id @default(autoincrement())
+  name        String
+  price       Float
   description String
   ingredients String
-  imgUrl String
+  imgUrl      String
+}
+
+model Usuario {
+  id       Int    @id @default(autoincrement())
+  name     String
+  password String
+  email    String @unique
 }

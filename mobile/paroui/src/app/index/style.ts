@@ -5,10 +5,8 @@ export const styles = StyleSheet.create({
     container: {
         // ocupa todo o espaço disponível
         flex: 1,
-        backgroundColor: "#f4eded"
-    },
-    header: {
-        // padding: 16
+        backgroundColor: "#f4eded",
+        color: "#8C4410",
     },
     headerImage: {
         width: "100%",
@@ -18,40 +16,38 @@ export const styles = StyleSheet.create({
     restauranteName: {
         fontSize: 50,
         fontWeight: "bold",
-        marginTop: 16,
         position: "absolute",
         color: "#fff",
-        fontFamily: "Hammersmith one",
         alignSelf: 'center',
         bottom: '50%'
     },
     tabs: {
         flexDirection: "row",
-        padding: 16,
+        padding: 18,
         borderBottomColor: "#eee",
         borderBottomWidth: 1,
-        gap: 16
+        justifyContent: "space-evenly",
     },
     tabsName: {
-        color: "#666"
+        color: "#8C4410"
     },
     menuList: {
-        padding: 16,
         flex: 1
     },
     menuItem: {
         flexDirection: "row",
         borderBottomColor: "#eee",
-        borderBottomWidth: 1,
+        borderBottomWidth: 25,
         padding: 16
     },
     menuContent: {
-        flex: 1
+        flex: 1,
+        marginLeft: 16
     },
     itemImage: {
-        width: 80,
-        height: 80,
-        borderRadius: 8 
+        width: 95,
+        height: 95,
+        borderRadius: 8
     },
     itemName: {
         fontSize: 16,
@@ -65,5 +61,22 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         marginTop: 8
+    },
+    menuTitle: {
+        display: "flex",
+        alignItems: "center"
+    },
+    menu: {
+        fontSize: 45,
+        color: "#8C4410",
+        paddingTop: 20
+    },
+    menuOption: {
+        fontSize: 30,
+        color: "#8C4410",
+        paddingBottom: 50,
+    },
+    linha: {
+        color:"#5b2b13"
     }
 })
